@@ -1,0 +1,36 @@
+<div class="container">
+<form [formGroup]="userForm" (ngSubmit)="register()">
+<div class ="form-group">
+<label>Name</label>
+<input type="text" #nameRef class="form-control" formControlName="name">
+<b>{{nameRef.className}}</b>
+</div>
+<div class ="form-group">
+    <label>Email</label>
+    <input type="text"  class="form-control" formControlName="email">
+   
+    </div>
+    <div  formGroupName="address">
+        <div class ="form-group">
+            <label>Street</label>
+            <input type="text" class="form-control" formControlName="street">
+            
+            </div>
+            <div class ="form-group">
+                <label>City</label>
+                <input type="text" class="form-control" formControlName="city">
+                
+                </div>
+            
+          <div class ="form-group">
+              <label>Postelcode</label>
+              <input type="text" class="form-control" formControlName="postelCode">
+              
+              </div>
+        
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+         </form>
+    
+</div>
