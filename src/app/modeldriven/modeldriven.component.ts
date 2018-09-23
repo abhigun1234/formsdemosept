@@ -11,6 +11,7 @@ userForm= new FormGroup({name:new FormControl("abhishek",Validators.required),
     postelCode:new FormControl()
   ,street:new FormControl()
   })})
+  //userForm=new FormGroup({name: new FormControl(),email:new FormControl(),address:new FormGroup({street:new FormControl()})})
   constructor() { }
 
   ngOnInit() {
