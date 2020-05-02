@@ -9,7 +9,8 @@ export class ModeldrivenComponent implements OnInit {
 userForm= new FormGroup({name:new FormControl("abhishek",Validators.required),
   email:new FormControl(),address:new FormGroup({city:new FormControl(),
     postelCode:new FormControl()
-  ,street:new FormControl()
+  ,street:new FormControl(),
+  line:new FormControl()
   })})
   //userForm=new FormGroup({name: new FormControl(),email:new FormControl(),address:new FormGroup({street:new FormControl()})})
   constructor() { }
